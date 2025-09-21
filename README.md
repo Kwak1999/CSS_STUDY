@@ -9,7 +9,7 @@
             - 클래스 선택자 : class 속성의 값이 ~~ 인 요소 선택 '.' < 이 클래스
               ex) .orange {} 이런 경우 '<li class="orange"></li>'의 선택자들이 적용 대상
             - 아이디 선택자: id 속성의 값이 ~~인 요소 선택
-              ex) #orange {} 이런 경우 '<li id="orange" class="orange"></li>'적용
+              ex) #orange {} 이런 경우 "'<li id="orange" class="orange"></li>'"적용
         - 복합 선택자
             - 일치 선택자: 선택자 n개를 동시에 만족하는 요소 선택
               ex) span.orange {}
