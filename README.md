@@ -5,53 +5,53 @@
         - 기본 선택자
             - 전체 선택자 : *
             - 태그 선택자 : 태그 이름으로 요소를 선택
-              ex) li {}
+              - ex) li {}
             - 클래스 선택자 : class 속성의 값이 ~~ 인 요소 선택 '.' < 이 클래스
-              ex) .orange {} 이런 경우 '<li class="orange"></li>'의 선택자들이 적용 대상
+              - ex) .orange {} 이런 경우 `<li class="orange"></li>`의 선택자들이 적용 대상
             - 아이디 선택자: id 속성의 값이 ~~인 요소 선택
-              ex) #orange {} 이런 경우 `'<li id="orange" class="orange"></li>'`적용
+              - ex) #orange {} 이런 경우 `<li id="orange" class="orange"></li>`적용
         - 복합 선택자
             - 일치 선택자: 선택자 n개를 동시에 만족하는 요소 선택
-              ex) span.orange {}
+              - ex) span.orange {}
             - 자식 선택자: ~~의 자식 요소를 선택
-              ex) ul > .orange {}
+              - ex) ul > .orange {}
             - 하위 선택자: 선택자의 하위요소 선택
             띄어쓰기가 선택자의 기호
-              ex) div .orange {}
+              - ex) div .orange {}
             - 인접 형제 선택자: 선택자의 다음 형제 요소 하나를 선택
-              ex) .orange + li {}
+              - ex) .orange + li {}
             - 일반 형제 선택자: 선택자의 다음 형제 요소 모두를 선택
-              ex) .orange ~ li {}
+              - ex) .orange ~ li {}
         - 가상 클래스 선택자
             - hover: 마우스 커서가 올라가 있는 동안 선택
-              ex) .box:hover {}
+              - ex) .box:hover {}
             - ACTIVE: 마우스를 클릭하고 있는 동안 선택
-              ex) .box:active {}
+              - ex) .box:active {}
             - FOCUS: 포커스되면 선택
             ex) .input:focus {}
                 - input
                 - select
                 - textarea
             - FIRST CHILD: 선택자가 형제 요소 중 첫째라면 선택
-              ex) .fruits span:first-child {}
+              - ex) .fruits span:first-child {}
             - LAST CHILD: 선택자가 형제 요소 중 막내라면 선택
-              ex) .fruits h3:last-child {}
+              - ex) .fruits h3:last-child {}
             - NTH CHILD: 선택자가 형제 요소 중 n째라면 선택
-              ex) .fruits *:nth-child(2) {}
-              ex2) .fruits *:nth-child(2n) {} 단, n은 0부터 시작 0, 2, 4, 6 이런 식으로 진행
+              - ex) .fruits *:nth-child(2) {}
+              - ex2) .fruits *:nth-child(2n) {} 단, n은 0부터 시작 0, 2, 4, 6 이런 식으로 진행
             - 부정 선택자: NOT 선택자 ~~가 아닌 요소 선택
-              ex) .fruits *:not(span) {}
+              - ex) .fruits *:not(span) {}
         - 가상 요소 선택자
             - BEFORE: 선택자 요소의 내부 앞에 내용을 삽입.
-              ex) .box::before { content: "앞";}
+              - ex) .box::before { content: "앞";}
             content 속성과 반드시 같이 사용
             - AFTER: 선택자 요소의 내부 뒤에 내용을 삽입
-              ex) .box::after { content: "뒤";} content 속성과 반드시 같이 사용
+              - ex) .box::after { content: "뒤";} content 속성과 반드시 같이 사용
         - 속성 선택자
             - ATTR: 속성을 포함한 요소 선택
-              ex) [disabled] {}
+              - ex) [disabled] {}
             - ATTR=VALUE: 속성을 포함하고 값이 ~~인 요소 선택
-              ex) [type="password"] {}
+              - ex) [type="password"] {}
     - 속성: 스타일의 종류
         - 스타일 상속
             - 부모에 스타일을 적용시킨다면 자식까지 같이 적용 되는 것
