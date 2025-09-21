@@ -74,13 +74,13 @@
     ### 속성: 스타일의 종류
         - 스타일 상속
             - 부모에 스타일을 적용시킨다면 자식까지 같이 적용 되는 것
-                - ##font-style##: 글자 기울기
-                - ##font-weight##: 글자 두께
-                - ##font-size##: 글자 크기
-                - ##line-height##: 줄 높이
-                - ##font-family##: 폰트(서체)
-                - ##color##: 글자 색상
-                - ##text-align##: 정렬
+                - font-style: 글자 기울기
+                - font-weight: 글자 두께
+                - font-size: 글자 크기
+                - line-height: 줄 높이
+                - font-family: 폰트(서체)
+                - color: 글자 색상
+                - text-align: 정렬
                 - ..등등
                 
         - 강제 상속
