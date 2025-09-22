@@ -126,3 +126,29 @@
 - **@import 방식** → CSS 내부에서 또 다른 CSS 파일을 불러올 때 사용 (성능상 link 권장)  
 - **우선순위 이해** → 충돌 시 어떤 스타일이 적용될지 쉽게 파악 가능  
 
+
+| 종류                | 설명                 | 예제                                   |
+| ----------------- | ------------------ | ------------------------------------ |
+| **전체 선택자**        | 모든 요소 선택           | `* { margin: 0; }`                   |
+| **태그 선택자**        | 태그 이름으로 선택         | `li { color: red; }`                 |
+| **클래스 선택자**       | class 속성값으로 선택     | `.orange { color: orange; }`         |
+| **아이디 선택자**       | id 속성값으로 선택        | `#orange { font-weight: bold; }`     |
+| **일치 선택자**        | 여러 조건 동시에 만족       | `span.orange {}`                     |
+| **자식 선택자**        | 특정 부모의 직계 자식 선택    | `ul > .orange {}`                    |
+| **하위 선택자**        | 특정 부모의 모든 하위 요소 선택 | `div .orange {}`                     |
+| **인접 형제 선택자**     | 바로 다음 형제 요소 선택     | `.orange + li {}`                    |
+| **일반 형제 선택자**     | 다음에 오는 형제 요소 모두 선택 | `.orange ~ li {}`                    |
+| **:hover**        | 마우스 올렸을 때          | `.box:hover { background: yellow; }` |
+| **:active**       | 마우스 클릭 중           | `.box:active { color: red; }`        |
+| **:focus**        | 포커스될 때             | `.input:focus { outline: none; }`    |
+| **:first-child**  | 첫째 요소 선택           | `.fruits span:first-child {}`        |
+| **:last-child**   | 막내 요소 선택           | `.fruits h3:last-child {}`           |
+| **:nth-child(n)** | n번째 요소 선택          | `.fruits *:nth-child(2) {}`          |
+| **:not(…)**       | 특정 요소 제외           | `.fruits *:not(span) {}`             |
+| **::before**      | 요소 앞에 내용 삽입        | `.box::before { content: "앞"; }`     |
+| **::after**       | 요소 뒤에 내용 삽입        | `.box::after { content: "뒤"; }`      |
+| **\[attr]**       | 속성 있는 요소 선택        | `[disabled] { opacity:0.5; }`        |
+| **\[attr=value]** | 속성 값이 일치하는 요소 선택   | `[type="password"] {}`               |
+| **스타일 상속**        | 부모 스타일이 자식에게 전파    | `div { color: blue; }` (자식 글자색도 파란색) |
+| **강제 상속**         | 상속되지 않는 속성도 강제 적용  | `height: inherit;`                   |
+

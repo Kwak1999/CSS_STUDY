@@ -116,3 +116,39 @@
 - 요소 투명도
     - 1 불투명
     - 0~1 0부터 1사이의 투명
+
+
+  | 속성                         | 설명                | 예제                                            |
+  | -------------------------- | ----------------- | --------------------------------------------- |
+  | **width / height**         | 요소의 가로/세로 크기      | `div { width: 200px; height: 100px; }`        |
+  | **max-width / max-height** | 요소의 최대 가로/세로 크기   | `img { max-width: 100%; max-height: 400px; }` |
+  | **px 단위**                  | 픽셀 단위             | `div { width: 300px; }`                       |
+  | **% 단위**                   | 부모 대비 백분율         | `div { width: 50%; }`                         |
+  | **em 단위**                  | 요소 글꼴 크기 배수       | `p { font-size: 2em; }`                       |
+  | **rem 단위**                 | 루트(html) 글꼴 크기 배수 | `p { font-size: 1.5rem; }`                    |
+  | **vw 단위**                  | 뷰포트 가로너비 백분율      | `div { width: 50vw; }`                        |
+  | **vh 단위**                  | 뷰포트 세로너비 백분율      | `div { height: 60vh; }`                       |
+  | **margin (하나)**            | 모든 방향 외부여백        | `div { margin: 20px; }`                       |
+  | **margin (두 개)**           | 상하/좌우 외부여백        | `div { margin: 10px 20px; }`                  |
+  | **margin (세 개)**           | 상/좌우/하            | `div { margin: 10px 20px 30px; }`             |
+  | **margin (네 개)**           | 상/우/하/좌           | `div { margin: 10px 20px 30px 40px; }`        |
+  | **padding**                | 내부여백              | `div { padding: 10px; }`                      |
+  | **border-width**           | 테두리 두께            | `div { border-width: 2px; }`                  |
+  | **border-style**           | 테두리 종류            | `div { border-style: solid; }`                |
+  | **border-color**           | 테두리 색상            | `div { border-color: red; }`                  |
+  | **border (단축)**            | 테두리 한 줄 지정        | `div { border: 2px solid blue; }`             |
+  | **border-radius**          | 모서리 둥글게           | `div { border-radius: 10px; }`                |
+  | **box-sizing**             | 크기 계산 기준          | `div { box-sizing: border-box; }`             |
+  | **overflow: visible**      | 넘친 내용 보임          | `div { overflow: visible; }`                  |
+  | **overflow: hidden**       | 넘친 내용 숨김          | `div { overflow: hidden; }`                   |
+  | **overflow: scroll**       | 넘친 내용 스크롤         | `div { overflow: scroll; }`                   |
+  | **overflow: auto**         | 넘친 경우만 스크롤        | `div { overflow: auto; }`                     |
+  | **display: block**         | 블록 요소             | `div { display: block; }`                     |
+  | **display: inline**        | 인라인 요소            | `span { display: inline; }`                   |
+  | **display: inline-block**  | 인라인+블록            | `img { display: inline-block; }`              |
+  | **display: flex**          | 플렉스(1차원 레이아웃)     | `section { display: flex; }`                  |
+  | **display: grid**          | 그리드(2차원 레이아웃)     | `div { display: grid; }`                      |
+  | **display: none**          | 요소 숨김             | `div { display: none; }`                      |
+  | **opacity 1**              | 불투명               | `div { opacity: 1; }`                         |
+  | **opacity 0.5**            | 반투명               | `div { opacity: 0.5; }`                       |
+  | **opacity 0**              | 완전투명              | `div { opacity: 0; }`                         |

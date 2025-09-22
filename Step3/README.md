@@ -193,3 +193,48 @@
             - 3D 변환으로 회전된 요소의 뒷면 숨김 여부
             - visible: 뒷면 보임
             - hidden: 뒷면 숨김
+
+
+| 속성                             | 설명             | 예제                                                 |
+| ------------------------------ | -------------- | -------------------------------------------------- |
+| **font-style**                 | 글자의 기울기        | `p { font-style: italic; }`                        |
+| **font-weight**                | 글자의 두께         | `p { font-weight: 700; }`                          |
+| **font-size**                  | 글자의 크기         | `p { font-size: 20px; }`                           |
+| **line-height**                | 한 줄의 높이(행간)    | `p { line-height: 1.5; }`                          |
+| **color**                      | 글자 색상          | `p { color: rgb(255,0,0); }`                       |
+| **text-align**                 | 글자 정렬          | `p { text-align: center; }`                        |
+| **text-decoration**            | 글자 장식(선)       | `a { text-decoration: underline; }`                |
+| **text-indent**                | 첫 줄 들여쓰기       | `p { text-indent: 2em; }`                          |
+| **background-color**           | 배경 색상          | `div { background-color: lightblue; }`             |
+| **background-image**           | 배경 이미지         | `div { background-image: url('bg.jpg'); }`         |
+| **background-repeat**          | 이미지 반복 여부      | `div { background-repeat: no-repeat; }`            |
+| **background-position**        | 배경 이미지 위치      | `div { background-position: center top; }`         |
+| **background-size**            | 배경 이미지 크기      | `div { background-size: cover; }`                  |
+| **background-attachment**      | 배경 스크롤 특성      | `div { background-attachment: fixed; }`            |
+| **position: static**           | 기본 위치          | `div { position: static; }`                        |
+| **position: relative**         | 자신 기준 위치       | `div { position: relative; top:10px; }`            |
+| **position: absolute**         | 부모 기준 위치       | `div { position: absolute; left:50px; }`           |
+| **position: fixed**            | 뷰포트 기준 고정      | `div { position: fixed; bottom:0; }`               |
+| **z-index**                    | 쌓임 순서          | `div { z-index: 10; }`                             |
+| **display: flex**              | Flex 컨테이너 정의   | `section { display: flex; }`                       |
+| **flex-direction**             | Flex 아이템의 방향   | `section { flex-direction: column; }`              |
+| **flex-wrap**                  | 줄 바꿈 여부        | `section { flex-wrap: wrap; }`                     |
+| **justify-content**            | 주축 정렬          | `section { justify-content: center; }`             |
+| **align-content**              | 교차축 여러 줄 정렬    | `section { align-content: flex-start; }`           |
+| **align-items**                | 교차축 한 줄 정렬     | `section { align-items: center; }`                 |
+| **order**                      | Flex 아이템 순서    | `.item { order: 2; }`                              |
+| **flex-grow**                  | Flex 아이템 증가 비율 | `.item { flex-grow: 1; }`                          |
+| **flex-shrink**                | Flex 아이템 감소 비율 | `.item { flex-shrink: 0; }`                        |
+| **flex-basis**                 | Flex 아이템 기본 너비 | `.item { flex-basis: 200px; }`                     |
+| **transition**                 | 전환(속성/시간 등 단축) | `div { transition: all 0.3s ease; }`               |
+| **transition-property**        | 전환할 속성         | `div { transition-property: opacity; }`            |
+| **transition-duration**        | 전환 지속시간        | `div { transition-duration: 2s; }`                 |
+| **transition-timing-function** | 전환 타이밍         | `div { transition-timing-function: ease-in-out; }` |
+| **transition-delay**           | 전환 대기시간        | `div { transition-delay: 1s; }`                    |
+| **transform: translate**       | 이동             | `div { transform: translate(50px, 20px); }`        |
+| **transform: scale**           | 크기 변경          | `div { transform: scale(1.5); }`                   |
+| **transform: rotate**          | 회전             | `div { transform: rotate(45deg); }`                |
+| **transform: skew**            | 기울임            | `div { transform: skewX(15deg); }`                 |
+| **perspective**                | 3D 원근감         | `.container { perspective: 500px; }`               |
+| **rotateX / rotateY**          | 3D 회전          | `.box { transform: rotateY(180deg); }`             |
+| **backface-visibility**        | 뒷면 보임 여부       | `.box { backface-visibility: hidden; }`            |
